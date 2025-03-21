@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Sabon Depot - Kalayaan, Laguna </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	
+	<style>
+	body {
+			background-image: url(edit1.png);
+			background-size: cover;
+			background-repeat: no repeat;
+			background-attachment: fixed;
+		}
+	
+	.navbar {
+					width: 100%;
+					height: 90px;
+					background-size: cover;
+					font-family: tahoma;
+					background-color: #fdfefe;
+				}
+				
+	.nav-link {
+				color: #145a32;
+			}
+			
+	.nav-link:hover {
+						color: #f4d03f;
+					}
+	
+	.logo_on_the_navbar {
+						width: 80px;
+						height: 80px;
+						}
+					
+	.sabonlogo img-fluid {
+				width: 200px;
+				height: 130px;
+				}
+
+	.intro {
+			background-image: url("edit15.png");
+			background-size: cover;
+			background-repeat: no repeat;
+			padding: 1.5rem;
+			}
+
+	.label_intro1 {
+					text-align: center;
+					text-shadow: 2px 2px 8px #145a32;
+					font-size: 20px;
+					font-weight: bold;
+					color: #fdfefe;
+					font-family: tahoma;
+				}
+
+	.label_continuation1 {
+							text-align: center;
+							text-shadow: 2px 2px 8px #145a32;
+							font-size: 15px;
+							color: #fdfefe;
+							font-family: tahoma;
+						}
+
+	.joinus {
+			background-color: #145a32;
+			padding: 1.5rem;
+			text-align: center;
+			}
+
+	.label_intro2 {
+					text-align: center;
+					font-size: 15px;
+					font-weight: bold;
+					color: #fdfefe;
+					font-family: tahoma;
+				}
+
+	.label_continuation2 {
+							text-align: center;
+							font-size: 10px;
+							color: #fdfefe;
+							font-family: tahoma;
+						}
+
+	 .signup-form {
+            background-color: white;
+            padding: 20px;
+			margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 80%;
+        }
+
+        .signup-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+			font-weight: bold;
+			font-family: tahoma;
+			color: #145a32;
+        }
+
+        .signup-form label {
+            display: block;
+            margin-bottom: 5px;
+			font-family: tahoma;
+			color: #145a32;
+        }
+
+        .signup-form input[type="text"],
+        .signup-form input[type="email"],
+        .signup-form input[type="contact"] {
+            width: calc(100% - 12px); /* Adjust for padding and border */
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Include padding and border in width */
+        }
+
+        .signup-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #239b56;
+            color: #fdfefe;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+			font-family: tahoma;
+        }
+
+        .signup-form button:hover {
+            background-color: #2ecc71;
+			font-family: tahoma;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.8em;
+            margin-top: 5px;
+        }
+
+        .success-message {
+            color: green;
+            font-size: 0.8em;
+            margin-top: 5px;
+        }
+
+		.notice_cont {
+					padding: 1rem;
+					}
+
+	.notice_label {
+					font-size: 15px;
+					font-style: italic;
+					color: #ecf0f1;
+					text-align: center;
+					font-family; tahoma;
+				}
+
+	.btn {
+				color: white;
+				font-family: tahoma;
+				background-color: #239b56;
+			}
+			
+	.btn:hover {
+				background-color: #2ecc71;
+				font-family: tahoma;
+			}
+			
+	.contacts {
+				background-color: #145a32;
+				background-size: cover;
+				background-repeat: no repeat;
+				padding: 0.5rem;
+				margin: 0 auto;
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+				margin-left: auto;
+				margin-right: auto;
+				width: 100%;
+				}
+				
+	.tablecontacts {
+					margin-left: auto;
+					margin-right: auto;
+					width: 100%;
+					color: #fdfefe;
+					font-size: 13px;
+					font-family: tahoma;
+				}
+				
+	.contactpic {
+					width: 100px;
+					height: 100px;
+				}
+			
+	footer {
+            color: #fdfefe;
+			font-family: tahoma;
+			font-size: 13px;
+            text-align: center;
+            padding: 0.3rem 0;
+            position:relative;
+            bottom:0;
+            width:100%;
+			line-height: 1px;
+        }
+	
+	</style>
+  </head>
+  
+  <body>
+  
+  <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+   <a class="navbar-brand" href="finals_html_home.html"> <img class="logo_on_the_navbar" src="business_final_logo.png"> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: rgba(255, 255, 255, 0.9);">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="finals_html_home.html"> Home </a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="finals_html_about us.html"> About Us </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="finals_html_products.html"> Products </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Branches
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="finals_html_branches.html#luzon_branches"> Luzon </a></li>
+            <li><a class="dropdown-item" href="finals_html_branches.html#visayas_branches"> Vizayas </a></li>
+			<li><a class="dropdown-item" href="finals_html_branches.html#mindanao_branches"> Mindanao </a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="finals_html_franchising.html"> Franchise </a></li>
+          </ul>
+        </li>
+		
+    </div>
+	</div>
+	</nav>
+
+<div class="intro">
+    <div class="container">
+        <div class="row justify-content-center">
+    <div class="col-md-6 text-center">
+		<br>
+        <img src="sabon depot logo.png" alt="Green Square Logo" class="img-fluid1">
+    </div>
+</div>
+</div>
+
+	<br>
+
+	<p class="label_intro1"> Join our fast emerging family! </p>
+	<p class="label_continuation1"> The 2025 vision includes a massive expansion nationwide, a manufacturing plants in strategic islands “One town, One Sabon Depot” and establishing of Sabon Depot Jr. outlets in We Are Your Favorite Store.
+		And including the expansion in Southeast Asia – Cambodia, Malaysia, Indonesia, Thailand and Vietnam. </p>
+	<p class="label_continuation1"> Sabon Depot has ten (10) production sites / warehouses strategically located in: Bocaue Bulacan. Angeles, Pampanga. Baguio City. Lipa, Batangas. Santiago City, Isabela. Tacloban City. Iloilo City. Davao City and Panabo City, Davao Del Norte.
+		Equipped with logistics for the management of warehousing, inventory and delivery. </p>
+	</div>
+
+	<div class="joinus">
+	<p class="label_intro2"> So come and join us, have your very own Sabon Depot store! </p>
+	<p class="label_continuation2"> Sign up below if you are interested! We'll be happily to assist you with the Sabon Depot JDG.
+		But if you want to sign up directly with Sabon Depot JDG, visit their official website <a href="https://sabondepotjdg.com/" id="externallink">Sabon Depot JDG</a>
+		and they'll be glad to assist you as well. </p>
+	</div>
+	</div>
+	
+	<br>
+	<br>
+	
+	<div class="signup-form">
+        <h2> Sign Up </h2>
+        <form id="signupForm">
+            <label for="firstname"> First Name: </label>
+            <input type="text" id="firstname" name="firstname" required>
+            <div id="firstnameError" class="error-message"></div>
+
+            <label for="lastname"> Last Name: </label>
+            <input type="text" id="lastname" name="lasstname" required>
+            <div id="lastnameError" class="error-message"></div>
+
+            <label for="email"> Email: </label>
+            <input type="email" id="email" name="email" required>
+            <div id="emailError" class="error-message"></div>
+
+            <label for="contact"> Contact Number: </label>
+            <input type="contact" id="contact" name="contact" required>
+            <div id="contactError" class="error-message"></div>
+
+            <button type="submit"> Submit </button>
+            <div id="successMessage" class="success-message"></div>
+        </form>
+    </div>
+
+	<br>
+
+	<div class="notice_cont">
+	<p class="notice_label"> If you have any inquiries, feel free to message us through any of our contacts. </p>
+	</div>
+
+	<br>
+	<br>
+	<br>
+	
+	<div class="contacts">
+	<table class="tablecontacts">
+	<tr>
+			<td align="left" width="20px;"> </td>
+			<td align="center" width="50px;"> <img src="business_final_logo.png" class="contactpic"> </td>
+			<td align="left" width="300px;"><p>
+			<br>
+			Location:
+			<br>
+			⚲ Manila East Road Brgy Longos, 
+			<br>
+			Kalayaan Laguna, Kalayaan, Philippines, 4015
+			</p>
+			<td align="right" width="500px;"><p class="2tdforp"> 
+			<br>
+			Contacts:
+			<br>
+			✆ 0992 580 3919
+			<br>
+			🖂 sdkalayaan23@gmail.com
+			<br>
+			FB: Sabon Depot - Kalayaan, Laguna
+			</p>
+			</td>
+			<td align="left" width="50px;"> </td>
+	</tr>
+	</table>
+	</div>
+	
+	<br>
+	
+	<footer>
+	<p><i> &copy; 2025 SABON DEPOT - KALAYAAN, LAGUNA </i></P>
+	</footer>
+	
+	</div>
+
+	<script>
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            let isValid = true;
+
+            if (!email.includes('@')) {
+                document.getElementById('emailError').textContent = 'Invalid email format.';
+                isValid = false;
+            } else {
+                document.getElementById('emailError').textContent = '';
+            }
+
+            if (contact.length < 15) {
+                document.getElementById('contactError').textContent = 'Contact must be at least 6 characters.';
+                isValid = false;
+            } else {
+                document.getElementById('contactError').textContent = '';
+            }
+
+            if (isValid) {
+                document.getElementById('successMessage').textContent = 'Sign up successful!';
+                document.getElementById('signupForm').reset();
+            } else {
+                document.getElementById('successMessage').textContent = '';
+            }
+
+		});
+
+		document.getElementById('externallink').addEventListener('click', function (event) {
+                event.preventDefault();
+
+                if (confirm("You are about to leave this website. Continue?")) {
+                    window.location.href = this.href;
+                }
+        });
+    </script>
+
+	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

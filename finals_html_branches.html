@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Sabon Depot - Kalayaan, Laguna </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	
+	<style>
+	
+	body {
+			background-image: url(edit1.png);
+			background-size: cover;
+			background-repeat: no repeat;
+			background-attachment: fixed;
+		}
+	
+	.navbar {
+					width: 100%;
+					height: 90px;
+					background-size: cover;
+					font-family: tahoma;
+					background-color: #fdfefe;
+				}
+				
+	.nav-link {
+				color: #145a32;
+			}
+			
+	.nav-link:hover {
+						color: #f4d03f;
+					}
+	
+	.logo_on_the_navbar {
+						width: 80px;
+						height: 80px;
+						}
+						
+	.branches_header {
+						background-color: #145a32;
+						padding: 1.5rem;
+						text-align: center;
+					}
+					
+	.branches_label {
+						color: #fdfefe;
+						font-size: 30px;
+						font-weight: bold;
+						font-family: tahoma;
+					}
+					
+	.divider {
+				height: 40px;
+			}
+
+	.luzon_divider {
+						border: solid #fdfefe;
+						opacity: 1;
+						width: 100%;
+						border-width: 1px;
+						margin-left: auto;
+						margin-right: auto;
+					}
+	
+	.for_luzon {
+				background-image: linear-gradient(130deg, #145a32, #f4d03f);
+				padding: 1.5rem;
+				margin: 0 auto;
+				border-radius: 5px;
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+				width: 95%;
+				}
+				
+	.luzon_table {
+					margin-left: auto;
+					margin-right: auto;
+					width: 100%;
+					color: #fdfefe;
+					font-family: tahoma;
+				}
+	
+	.luzon_header {
+					font-size: 30px;
+					font-weight: bold;
+					font-family: tahoma;
+					font-style: italic;
+					text-decoration: underline;
+				}
+				
+	.forlabel {
+				text-align: center;
+				font-weight: bold;
+			}
+	
+	.region1 {
+				font-size: 10px;
+				vertical-align: top;
+			}
+			
+	.region2 {
+				font-size: 10px;
+				vertical-align: top;
+			}
+	
+	.region3 {
+				font-size: 10px;
+				vertical-align: top;
+			}
+	
+	.region4a {
+				font-size: 10px;
+				vertical-align: top;
+			}
+			
+	.region4b {
+				font-size: 10px;
+				vertical-align: top;
+			}
+			
+	.region5 {
+				font-size: 10px;
+				vertical-align: top;
+			}
+
+	.ncr {
+				font-size: 10px;
+				vertical-align: top;
+			}
+			
+	.car {
+				font-size: 10px;
+				vertical-align: top;
+			}
+
+	.visayas_divider {
+						border: solid #fdfefe;
+						opacity: 1;
+						width: 100%;
+						border-width: 1px;
+						margin-left: auto;
+						margin-right: auto;
+					}
+	
+	.for_visayas {
+				background-image: linear-gradient(130deg, #145a32, #f4d03f);
+				padding: 1.5rem;
+				margin: 0 auto;
+				border-radius: 5px;
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+				width: 90%;
+				}
+				
+	.visayas_table {
+					margin-left: auto;
+					margin-right: auto;
+					width: 100%;
+					color: #fdfefe;
+					font-family: tahoma;
+				}
+	
+	.visayas_header {
+					font-size: 30px;
+					font-weight: bold;
+					font-family: tahoma;
+					font-style: italic;
+					text-decoration: underline;
+				}
+	
+	.region7 {
+				font-size: 10px;
+				vertical-align: top;
+			}
+			
+	.region8 {
+				font-size: 10px;
+				vertical-align: top;
+			}
+	
+	.nir {
+				font-size: 10px;
+				vertical-align: top;
+			}
+
+	.mindanao_divider {
+						border: solid #fdfefe;
+						opacity: 1;
+						width: 100%;
+						border-width: 1px;
+						margin-left: auto;
+						margin-right: auto;
+					}
+	
+	.for_mindanao{
+				background-image: linear-gradient(130deg, #145a32, #f4d03f);
+				padding: 1.5rem;
+				margin: 0 auto;
+				border-radius: 5px;
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+				width: 90%;
+				}
+				
+	.mindanao_table {
+					margin-left: auto;
+					margin-right: auto;
+					width: 100%;
+					color: #fdfefe;
+					font-family: tahoma;
+				}
+	
+	.mindanao_header {
+					font-size: 30px;
+					font-weight: bold;
+					font-family: tahoma;
+					font-style: italic;
+					text-decoration: underline;
+				}
+	
+	.region10 {
+				font-size: 10px;
+				vertical-align: top;
+			}
+			
+	.region11 {
+				font-size: 10px;
+				vertical-align: top;
+			}
+	
+	.region12 {
+				font-size: 10px;
+				vertical-align: top;
+			}
+
+	.barmm {
+				font-size: 10px;
+				vertical-align: top;
+			}
+
+	.forvnm {
+				width: 50%;
+			}
+
+	.for_franchise {
+						background-color: #145a32;
+						padding: 1.5rem;
+						text-align: center;
+					}
+	.notice_cont {
+					padding: 1rem;
+					}
+
+	.notice_label {
+					font-size: 15px;
+					font-style: italic;
+					color: #ecf0f1;
+					text-align: center;
+					font-family; tahoma;
+				}
+
+	.franchise {
+				color: #fdfefe;
+				font-size: 20px;
+				font-style: italic;
+				font-family: tahoma;
+			}
+	
+	.btn {
+				color: white;
+				font-family: tahoma;
+				background-color: #239b56;
+			}
+			
+	.btn:hover {
+				background-color: #2ecc71;
+				font-family: tahoma;
+			}
+			
+	.contacts {
+				background-color: #145a32;
+				background-size: cover;
+				background-repeat: no repeat;
+				padding: 0.5rem;
+				margin: 0 auto;
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+				margin-left: auto;
+				margin-right: auto;
+				width: 100%;
+				}
+				
+	.tablecontacts {
+					margin-left: auto;
+					margin-right: auto;
+					width: 100%;
+					color: #fdfefe;
+					font-size: 13px;
+					font-family: tahoma;
+				}
+				
+	.contactpic {
+					width: 100px;
+					height: 100px;
+				}
+			
+	footer {
+            color: #fdfefe;
+			font-family: tahoma;
+			font-size: 13px;
+            text-align: center;
+            padding: 0.3rem 0;
+            position:relative;
+            bottom:0;
+            width:100%;
+			line-height: 1px;
+        }
+	
+	</style>
+  </head>
+  
+  <body>
+  
+	<div id="branches">
+  <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+   <a class="navbar-brand" href="finals_html_home.html"> <img class="logo_on_the_navbar" src="business_final_logo.png"> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: rgba(255, 255, 255, 0.9);">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="finals_html_home.html"> Home </a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="finals_html_about us.html"> About Us </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="finals_html_products.html"> Products </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Branches
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="finals_html_branches.html#luzon_branches"> Luzon </a></li>
+            <li><a class="dropdown-item" href="finals_html_branches.html#visayas_branches"> Vizayas </a></li>
+			<li><a class="dropdown-item" href="finals_html_branches.html#mindanao_branches"> Mindanao </a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="finals_html_franchising.html"> Franchise </a></li>
+          </ul>
+        </li>
+
+    </div>
+	</div>
+	</nav>
+	</div>
+	
+	<div class="branches_header">
+	<p class="branches_label"> BRANCHES AROUND THE PHILIPPINES: </p>
+	</div>
+	
+	<br>
+	<br>
+
+	<div class="for_luzon">
+	<div id="luzon_branches">
+	<div style="overflow-x: auto;">
+	
+	<table class="luzon_table">
+	<tr>
+		<td colspan="8" class="luzon_header"> LUZON BRANCHES </td>
+	</tr>
+	
+	<tr>
+	<td colspan="8" class="divider"> <hr class="luzon_divider"> </td>
+	</tr>
+	
+	<tr>
+		<td class="region1">
+		<p class="forlabel"> Region I <br> (Ilocos Region) </p>
+		<p><ul>
+		<li> Agoo, La Union </li>
+		<li> Catbangen, San Fernando, La Union </li>
+		<br>
+		<li> Asingan, Pangasinan </li>
+		<li> Bayambang, Pangasinan </li>
+		<li> Burgos, Pangasinan </li>
+		<li> Mangaldan, Pangasinan </li>
+		<li> San Jacinto, Pangasinan </li>
+		</ul></p>
+		</td>
+		
+		<td class="region2">
+		<p class="forlabel"> Region II <br> (Cagayan Valley) </p>
+		<p><ul>
+		<li> Lal-lo, Cagayan </li>
+		<li> Tuguegarao City, Cagayan </li>
+		<br>
+		<li> Cabatuan, Isabela </li>
+		<li> Cauayan, Isabela </li>
+		<li> Cordon, Isabela </li>
+		<li> Mallig, Isabela </li>
+		<li> Plaridel, Santiago City, Isabela </li>
+		<li> Patul, Santiago City, Isabela </li>
+		<br>
+		<li> DIffun, Quirino </li>
+		</ul></p>
+		</td>
+		
+		<td class="region3">
+		<p class="forlabel"> Region III (Central Luzon) </p>
+		<p><ul>
+		<li> Balanga, Bataan </li>
+		<li> Hermosa, Bataan </li>
+		<li> Pillar, Bataan </li>
+		<br>
+		<li> Abangan Sur, Marilao, Bulacan </li>
+		<li> Angat, Bulacan </li>
+		<li> Makinabang, Baliuag, Bulacan </li>
+		<li> Marilao Crossing, Marilao, Bulacan </li>
+		<li> Matimbo, Malolos, Bulacan </li>
+		<li> Obando, Bulacan </li>
+		<li> Pulilan, Bulacan </li>
+		<li> Sta. Clara, Santa Maria, Bulacan </li>
+		<li> Santo Cristo, San Jose del Monte, Bulacan </li>
+		<li> Sapang Palay, San Jose del Monte, Bulacan </li>
+		<li> Tibag, Baliuag, Bulacan </li>		
+		<li> Tigpalas, San Miguel, Bulacan </li>
+		<br>
+		<li> Aliaga Public Market, Aliaga, Nueva Ecija </li>
+		<li> Jaen, Nueva Ecija </li>
+		<li> Maddiangat, Quezon, Nueva Ecija </li>
+		<li> Sta. Maria, Sto. Domingo, Nueva Ecija </li>
+		<br>
+		<li> Bulaon, San Fernando, Pampanga </li>
+		<li> Downtown, San Fernando, Pampanga </li>
+		<li> Madapdap Terminal, Mabalacat, Pampanga </li>
+		<li> Panipuan, Mexico, Pampanga </li>
+		<li> San Nicolas, Floridablanca, Pampanga </li>
+		<li> Sta. Ana, Pampanga </li>
+		<li> Sto. Domingo, Mexico, Pampanga </li>
+		<li> Sasmuan, Pampanga </li>
+		<li> Sindalan, San Fernando, Pampanga </li>
+		<li> Sucad, Apalit, Pampanga </li>
+		<br>
+		<li> Alfonso, Concepcion, Tarlac </li>
+		<li> Capas, Tarlac </li>
+		<li> Tarlac City, Tarlac </li>
+		<br>
+		<li> Iba, Zambales </li>
+		<li> San Antonio, Zambales </li>
+		<li> Subic, Zambales </li>
+		</ul></p>
+		</td>
+		
+		<td class="region4a">
+		<p class="forlabel"> Region IV-A (CALABRAZON) </p>
+		<p><ul>
+		<li> Balayaan, Batangas </li>
+		<li> Batangas City, Batangas </li>
+		<li> Alangilan, Batangas City, Batangas </li>
+		<li> Dumantay, Batangas City, Batangas </li>
+		<li> Poblacion (Barangay 1), Batangas City, Batangas </li>
+		<li> Cuenca, Batangas </li>
+		<li> Ibaan, Batangas </li>
+		<li> Lemery, Batangas </li>
+		<li> Nasugbu, Batangas </li>
+		<li> Sambat, San Pascual, Batangas </li>
+		<li> San Jose, Batangas </li>
+		<li> San Juan, Batangas </li>
+		<li> Darasa, Tanauan, Batangas </li>
+		<li> Laurel, Tanauan, Batangas </li>
+		<br>
+		<li> Asis I, Mendez, Cavite </li>
+		<li> Bacoor, Cavite </li>
+		<li> Camella Dasmas at The Island, Dasmarinas, Cavite </li>
+		<li> Carmona, Cavite </li>
+		<li> General Mariano Alvarez (GMA), Cavite </li>
+		<li> General Trias, Cavite </li>
+		<li> Greengate Subdivision, Imus, Cavite </li>
+		<li> Imus, Cavite </li>
+		<li> Indang, Cavite </li>
+		<li> Naic, Cavite </li>
+		<li> Rosario, Cavite </li>
+		<li> Silang, Cavite </li>
+		<li> Tanza, Cavite </li>
+		<br>
+		<li> Banay-banay, Cabuyao, Laguna </li>
+		<li> Calauan, Laguna </li>
+		<li> Elvinda, San Pedro, Laguna </li>
+		<li> Longos, Kalayaan, Laguna </li>
+		<li> Macabling, Sta. Rosa, Laguna </li>
+		<li> Pila, Laguna </li>
+		<li> South City, Biñan, Laguna </li>
+		<li> Subdivision 3A, San Pedro, Laguna </li>
+		<li> Victoria, Laguna </li>
+		<br>
+		<li> Atimonan, Quezon Province </li>
+		<li> Guinyangan, Quezon Province </li>
+		<li> Gumaca, Quezon Province </li>
+		<li> Infanta, Quezon Province </li>
+		<li> Lucena City, Quezon Province </li>
+		<li> Tagkawayan, Quezon Province </li>
+		<li> Tayabas, Quezon Province </li>
+		</ul></p>
+		</td>
+		
+		<td class="region4b">
+		<p class="forlabel"> Region IV-B <br> (MIMAROPA) </p>
+		<p><ul>
+		<li> Bongabong, Occidental Mindoro </li>
+		<li> Magsaysay, Occidental Mindoro </li>
+		</td>
+		
+		<td class="region5">
+		<p class="forlabel"> Region V <br> (Bicol Region) </p>
+		<p><ul>
+		<li> Polangui, Aklan </li>
+		<br>
+		<li> Oas, Albay </li>
+		<li> Daraga, Albay </li>
+		<br>
+		<li> Goa, Camarines Sur </li>
+		<li> Lagonoy, Camarines Sur </li>
+		<li> Naga City, Camarines Sur </li>
+		</ul></p>
+		</td>
+		
+		<td class="ncr">
+		<p class="forlabel"> National Capital Region (NCR) </p>
+		<p><ul>
+		<li> CAA-BF INTL., Las Piñas </li>
+		<li> Ipil Street, Admiral, Las Piñas </li>
+		<li> Pamplona Uno (Zapote), Las Piñas </li>
+		<li> Pamplona Dos (Naga Road Pulang Lupa), Las Piñas </li>
+		<li> Pamplona Tres (Doña Manuela), Las Piñas </li>
+		<li> Talon 3, Las Piñas </li>
+		<li> Talon 4, Las Piñas </li>
+		<li> Talon 5, Las Piñas </li>
+		<br>
+		<li> Bagong Pag-Asa, Quezon City, Metro Manila </li>
+		<li> Damong Maliit Road, Quezon City, Metro Manila </li>
+		<li> Deparo, Caloocan, Metro Manila </li>
+		<li> DLSV, Parañaque, Metro Manila </li>
+		<li> Gen. T. de Leon, Valenzuela, Metro Manila </li>
+		<li> Ilang Road, Caloocan, Metro Manila </li>
+		<li> Leveriza Street, Malate, Metro Manila </li>
+		<li> Maceda, Sampaloc, Metro Manila </li>
+		<li> Mandaluyong, Quezon City, Metro Manila </li>
+		<li> Marulas, Valenzuela, Metro Manila </li>
+		<li> San  Dionisio, Parañaque, Metro Manila </li>
+		<li> San Isidro, Parañaque, Metro Manila </li>
+		<li> Sta. Ana, Manila, Metro Manila </li>
+		<li> Sun Valley, Parañaque, Metro Manila </li>
+		<li> Talipapa, Quezon City, Metro Manila </li>
+		<li> Tramo Libertad, Pasay, Metro Manila </li>
+		<br>
+		<li> Cupang, Muntinlupa </li>
+		<br>
+		<li> Ampid I, San Mateo, Rizal </li>
+		<li> Cainta, Rizal </li>
+		<li> Jalajala, Rizal </li>
+		<li> Mascarado, Makati, Rizal </li>
+		<li> Muzon, Taytay, Rizal </li>
+		<li> P. Burgos, Antipolo, Rizal </li>
+		<li> Pasig, Rizal </li>
+		<li> Rizal, Makati, Rizal </li>
+		<li> Saint Monique Valais, Binangonan, Rizal </li>
+		<li> Teresa, Rizal </li>
+		<br>
+		<li> Bagumbayan, Taguig </li>
+		<li> Calzada-Tipas, Taguig </li>
+		<li> Pinagsama, Taguig </li>
+		<li> Upper Bicutan, Taguig </li>
+		</ul></p>
+		</td>
+		
+		<td class="car">
+		<p class="forlabel"> Cordillera Administrative Region (CAR) </p>
+		<p><ul>
+		<li> Andres Bonifacio, Baguio City, Benguet </li>
+		</ul></p>
+		</td>
+	</tr>
+	</table>
+	
+	</div>
+	</div>
+	</div>
+
+	<br>
+	<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <div class="for_visayas">
+                <div id="visayas_branches">
+                    <div style="overflow-x: auto;">
+                        <table class="visayas_table">
+                            <tr>
+                                <td colspan="3" class="visayas_header">VISAYAS BRANCHES</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="divider"><hr class="visayas_divider"></td>
+                            </tr>
+                            <tr>
+                                <td class="region7">
+                                    <p class="forlabel">Region VII<br>(Central Visayas)</p>
+                                    <p>
+                                        <ul>
+                                            <li>Lipata, Minglanila, Cebu</li>
+                                            <li>Talisay, Cebu</li>
+                                        </ul>
+                                    </p>
+                                </td>
+                                <td class="region8">
+                                    <p class="forlabel">Region VIII<br>(Eastern Visayas)</p>
+                                    <p>
+                                        <ul>
+                                            <li>Palo, Leyte</li>
+                                        </ul>
+                                    </p>
+                                </td>
+                                <td class="nir">
+                                    <p class="forlabel">Negros Island Region<br>(NIR)</p>
+                                    <p>
+                                        <ul>
+                                            <li>Bata, Bacolod, Negros Occidental</li>
+                                            <li>Bago, Negros Occidental</li>
+											<br>
+                                            <li>Dumaguete, Negros Oriental</li>
+                                        </ul>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="for_mindanao">
+                <div id="mindanao_branches">
+                    <div style="overflow-x: auto;">
+                        <table class="mindanao_table">
+                            <tr>
+                                <td colspan="4" class="mindanao_header">MINDANAO BRANCHES</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="divider"><hr class="mindanao_divider"></td>
+                            </tr>
+                            <tr>
+                                <td class="region10">
+                                    <p class="forlabel">Region X<br>(Northern Mindanao)</p>
+                                    <p>
+                                        <ul>
+                                            <li>Uptown, Cagayan de Oro, Misamis Oriental</li>
+                                        </ul>
+                                    </p>
+                                </td>
+                                <td class="region11">
+                                    <p class="forlabel">Region XI<br>(Davao Region)</p>
+                                    <p>
+                                        <ul>
+                                            <li>Davao City, Davao del Sur</li>
+                                        </ul>
+                                    </p>
+                                </td>
+                                <td class="region12">
+                                    <p class="forlabel">Region XII<br>(SOCCSKSAREGN)</p>
+                                    <p>
+                                        <ul>
+                                            <li>Magpet, Cotabato</li>
+                                            <li>Tacurong City, Sultan Kudarat</li>
+                                        </ul>
+                                    </p>
+                                </td>
+                                <td class="barmm">
+                                    <p class="forlabel">Bangsamoro Autonomous Region in Muslim Mindanao<br>(BARMM)</p>
+                                    <p>
+                                        <ul>
+                                            <li>Awang, Datu Odin Sinsuat, Maguindanao</li>
+                                        </ul>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+	<br>
+	<br>
+
+	<div class="notice_cont">
+	<p class="notice_label"> (Note: Some branches might not be in the list, let us know through any of 
+	our contacts if you see one in your area that is not listed!) </p>
+	</div>
+
+	<div class="for_franchise">
+	<p class="franchise">
+	Want to have your own Sabon Depot?
+	Franchise now together with Sabon Depot JDG!
+	</p>
+	<a href="finals_html_franchising.html" class="btn btn-outline-success"> Franchising </a>
+	</div>
+
+	<br>
+	<br>
+	<br>
+	
+	<div class="contacts">
+	<table class="tablecontacts">
+	<tr>
+			<td align="left" width="20px;"> </td>
+			<td align="center" width="50px;"> <img src="business_final_logo.png" class="contactpic"> </td>
+			<td align="left" width="300px;"><p>
+			<br>
+			Location:
+			<br>
+			⚲ Manila East Road Brgy Longos, 
+			<br>
+			Kalayaan Laguna, Kalayaan, Philippines, 4015
+			</p>
+			<td align="right" width="500px;"><p class="2tdforp"> 
+			<br>
+			Contacts:
+			<br>
+			✆ 0992 580 3919
+			<br>
+			🖂 sdkalayaan23@gmail.com
+			<br>
+			FB: Sabon Depot - Kalayaan, Laguna
+			</p>
+			</td>
+			<td align="left" width="50px;"> </td>
+	</tr>
+	</table>
+	</div>
+	
+	<br>
+	
+	<footer>
+	<p><i> &copy; 2025 SABON DEPOT - KALAYAAN, LAGUNA </i></P>
+	</footer>
+	
+	</div>
+
+	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
